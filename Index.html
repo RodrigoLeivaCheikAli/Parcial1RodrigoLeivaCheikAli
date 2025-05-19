@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clima Local</title>
+ <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+   <div class="container">
+    <h1>⛅Clima Local</h1>
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Ej: Cordoba, Argentina">
+      <button id="search-btn">Buscar</button>
+    </div>
+    <div id="weather-result" class="weather-card hidden">
+      <h2 id="city-name"></h2>
+      <img id="weather-icon" alt="Icono del clima">
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+    <p id="error-message" class="error hidden"></p>
+  </div>
+<div id="hourly-forecast" class="forecast-section hidden">
+    <h3>Pronóstico hora a hora</h3>
+    <div class="hourly-container"></div>
+  </div>
+
+  <div id="weekly-forecast" class="forecast-section hidden">
+    <h3>Pronóstico 7 días</h3>
+    <div class="weekly-container"></div>
+  </div>
+  <script src="Get-Api.js"></script>
+</body>
+</html>
